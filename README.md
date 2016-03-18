@@ -1,8 +1,8 @@
 # Hash Practice
 Let's practice interacting with Hashes (key-value pairings) by writing a program that creates hashes, stores data in hashes, retrieves data from hashes, and prints the contents of a hash.
 
-## TextAnalysis.rb
-Take a look at [TextAnalysis.rb](TextAnalysis.rb).
+## mood-analysis.rb
+Take a look at [mood-analysis.rb](mood-analysis.rb).
 
 ### What's Happening?
 Explain what is happening on each of the following lines in the code.
@@ -56,7 +56,7 @@ Your result will look like:
 
 *think*: Why does 03/13 come out as _sad_ when it should be _happy_? How could we fix this?
 
-2. To make the results a little more accurate, let's write and utilize a method to strip out the punctuation that affects the results. Namely, exclamation marks (!), periods (.), commas (,), and hashtags (#).
+2. To make the results a little more accurate, let's write and utilize a method called `strip_punctuation` to strip out the punctuation that affects the results. Namely, remove  exclamation marks (!), periods (.), commas (,), and hashtags (#).
 
 Your method should take a string as an argument and return the string without the above mentioned punctuation.
 
@@ -67,9 +67,6 @@ After writing this method, our new result should be:
 ...
 ```
 
-3. Write a method to determine how many logged entries it takes until there have been 3 :-) happy days.
+3. Write a method called `happy_days` to determine how many logged entries it takes until there have been three :-) happy days.
 
 4. Write a method to determine the most common mood across all logged entries.
-
-## Challenge Assignment
-[Encryptor Cipher](http://tutorials.jumpstartlab.com/projects/encryptor.html)
