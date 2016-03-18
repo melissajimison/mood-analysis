@@ -54,7 +54,7 @@ Your result will look like:
 ...
 ```
 
-*think*: Why does 03/13 come out as _sad_ when it should be _happy_? How could we fix this?
+**think**: Why does 03/13 come out as _sad_ when it should be _happy_? How could we fix this?
 
 2. To make the results a little more accurate, let's write and utilize a method called `strip_punctuation` to strip out the punctuation that affects the results. Namely, remove  exclamation marks (!), periods (.), commas (,), and hashtags (#).
 
@@ -67,7 +67,7 @@ After writing this method, our new result should be:
 ...
 ```
 
-*think*: Where should we call `strip_punctuation`? Does it matter? Why?
+**think**: Where should we call `strip_punctuation`? Does it matter? Why?
 
 3. Write a method called `happy_days` to determine how many logged entries it takes until there have been three :-) happy days.
 
@@ -76,8 +76,13 @@ Your output could be something like:
 It takes 5 entries for 3 happy days to occur
 ```
 
-*think*: What are you going to do if there aren't at least 3 happy days? Where do you need to handle that case?
+**think**: What are you going to do if there aren't at least 3 happy days? Where do you need to handle that case?
 
 4. Write a method called `overall_mood` to determine the most common mood across all logged entries.
 
-*think*: What if we eventually want to add feelings to our analysis? Can we write this code in a way that will prevent us from having to re-write it later?
+Your output could be something like:
+```
+The most common mood is :-)
+```
+
+**think**: What if we eventually want to add feelings to our analysis? Can we write this code in a way that will prevent us from having to re-write it later?
