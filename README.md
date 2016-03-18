@@ -85,4 +85,6 @@ Your output could be something like:
 The most common mood is :-)
 ```
 
+**think**: Should you use an array or a hash to solve this problem? Why?
+
 **think**: What if we eventually want to add feelings to our analysis? Can we write this code in a way that will prevent us from having to re-write it later?
