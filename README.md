@@ -1,4 +1,4 @@
-# Hash Practice
+# Mood Analysis: Hash Practice
 Let's practice interacting with Hashes (key-value pairings) by writing a program that creates hashes, stores data in hashes, retrieves data from hashes, and prints the contents of a hash.
 
 ## mood-analysis.rb
