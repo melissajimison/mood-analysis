@@ -1,6 +1,6 @@
-$feelings = {
-  happy: ["yay", "good", "great"],
-  sad: ["terrible", "awful", "horrible"]
+FEELINGS = {
+  happy: %w(yay, good, great),
+  sad: %w(terrible, awful, horrible)
 }
 
 def analyze_mood(words)
@@ -8,9 +8,9 @@ def analyze_mood(words)
   sad = 0
   words.downcase!
   words.split(" ").each do |word|
-    if $feelings[:happy].include? word
+    if FEELINGS[:happy].include? word
       happy += 1
-    elsif $feelings[:sad].include? word
+    elsif FEELINGS[:sad].include? word
       sad += 1
     end
   end

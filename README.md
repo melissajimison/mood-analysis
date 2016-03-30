@@ -27,13 +27,13 @@ What's the Data Type of the following?
 
 | Code                       | Data Type
 |----------------------------|-----------
-| $feelings                  |
+| FEELINGS                   |
 | :sad                       |
 | happy                      |
 | words                      |
 | words.split(" ")           |
-| $feelings[:sad]            |
-| $feelings[:happy].include? |
+| FEELINGS[:sad]             |
+| FEELINGS[:happy].include?  |
 | analyze_mood(text)         |
 
 ### Explaining the Code
@@ -45,7 +45,7 @@ What's the Data Type of the following?
 | What is the relationship between `text[0]`, `text[1]`, and `words`? |
 
 ### Assignment: Requirements
-1. Write a loop to print out each day and the emoticon that is associated by analyzing the mood of that day.
+1. Replace lines 31 and 32 and write a loop to print out each day and the emoticon that is associated by analyzing the mood of that day.
 
 Your result will look like:
 ```
