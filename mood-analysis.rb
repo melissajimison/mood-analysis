@@ -42,19 +42,23 @@ puts
 puts
 puts strip_punctuation(text[1])
 
-# def happy_days
-#   happy_face = 0
-#   text.lenght.times do |line|
-#     face = line[0,5] + " " + analyze_mood(line)
-#     if face.include? ":-)"
-#       happy_face += 1
-#     end
-#       break if  happy_face == 3
-#       print "It takes #{text.index} entries for 3 happy days to occur"
-#   end
-#
-# end
-# puts text[1].happy_face
+def happy_days
+
+  happy_face = 0
+  statment = ""
+  faces = text.map { |line| analyze_mood(line) }
+
+  faces.each_with_index do |one_face, index|
+    if one_face == ":-)"
+      happy_face += 1
+      break if happy_face > 3
+    end
+    statment = "It takes #{index + 1} entries for #{happy_face} happy days to occur"
+  end
+  statment
+end
+
+
 def overall_mood
   happy_face = 0
   sad_face = 0
