@@ -9,38 +9,38 @@ Explain what is happening on each of the following lines in the code.
 
 | Line # | What's happening?
 |:------:|-------------------
-| 1      |
-| 2      |
-| 3      |
-| 6      |
-| 7-8    |
-| 9      |
-| 10     |
-| 11     |
-| 12     |
-| 13     |
-| 14     |
-| 17-19  |
+| 1      | assings the constant variable to a FEELINGS hash
+| 2      | declares the key happy: (which is a symbol) and its value, the literal array that contains each of those words as an element
+| 3      |declares the key sad: (which is a symbol) and its value, the literal array that contains each of those words as an element
+| 6      | declare the method analyze_mood that takes one argument
+| 7-8    |declares de local variables sad and happy
+| 9      |convert the argument 'word' into all downcase letters
+| 10     |creates an array, splits the 'word' input by space and add them as an element. (a word). Also go throug each of those elements
+| 11     |look if the any of the words of the input are include in the value(the array) of the key :happy in the hash FEELINGS. should return false or true
+| 12     |it reasings the value of the variable happy adding one to itself
+| 13     |if the  condition in line 12 returns false it looks if the any of the words of the input are include in the value(the array) of the key :sad in the hash FEELINGS. should return false or true
+| 14     |it reasings the value of the variable sad adding one to itself
+| 17-19  | it defines the value it should return
 
 ### Data Types
 What's the Data Type of the following?
 
 | Code                       | Data Type
 |----------------------------|-----------
-| FEELINGS                   |
-| :sad                       |
-| happy                      |
-| words                      |
-| words.split(" ")           |
-| FEELINGS[:sad]             |
-| FEELINGS[:happy].include?  |
-| analyze_mood(text)         |
+| FEELINGS                   | Hash
+| :sad                       | symbol
+| happy                      |  fixnum
+| words                      |  string
+| words.split(" ")           |  array
+| FEELINGS[:sad]             |  array
+| FEELINGS[:happy].include?  |  baloon
+| analyze_mood(text)         |  String
 
 ### Explaining the Code
 | Question               | Answer
 |------------------------|-------
-| Why do we need line 9? |
-| What is the relationship between `words` and `word` (line 10)? |
+| Why do we need line 9? | if people use upcases
+| What is the relationship between `words` and `word` (line 10)? | word is local and temporary variable, that temporalaly replaces the value in the array words
 | Why doesn't line 19 have an associated if/condition? |
 | What is the relationship between `text[0]`, `text[1]`, and `words`? |
 
@@ -54,7 +54,7 @@ Your result will look like:
 ...
 ```
 
-**think**: Why does 03/13 come out as _sad_ when it should be _happy_? How could we fix this?
+**think**: Why does 03/13 come out as _neutral_ when it should be _happy_? How could we fix this?
 
 2. To make the results a little more accurate, let's write and utilize a method called `strip_punctuation` to strip out the punctuation that affects the results. Namely, remove  exclamation marks (!), periods (.), commas (,), and hashtags (#).
 
