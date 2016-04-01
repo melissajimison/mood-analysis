@@ -4,19 +4,14 @@ FEELINGS = {
 }
 
 def strip_punctuation(words)
-  happy = 0
-  sad = 0
   words.downcase!
-  # "03/01 I'm having a terrible horrible no good day."
   array = words.split(" ")
   array.map! { |word| word.delete("^a-zA-Z0-9") }
-
 end
 
 def analyze_mood(words)
   happy = 0
   sad = 0
-  words.downcase!
   words = strip_punctuation(words) ##################
   words.each do |word|
     if FEELINGS[:happy].include? word
@@ -45,7 +40,6 @@ text = [
 puts text.map { |line| line[0,5] + " " + analyze_mood(line) }
 puts
 puts
-
 puts strip_punctuation(text[1])
 
 # def happy_days
